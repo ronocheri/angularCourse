@@ -1,0 +1,11 @@
+<p>items works!</p>
+<div>
+<h1>list</h1>
+<ul *ngFor="let prd of items">
+<li>
+    <app-product [model]="prd">
+        {{prd.name}}
+</app-product>
+</li>
+</ul>
+</div>

@@ -1,0 +1,75 @@
+<p>root works!</p>
+
+
+
+<app-items ></app-items>
+
+<button [innerText]="onOffBtnText" (click)="showHideList()"></button>
+
+<div *ngIf="isListPresented; then listOn; else listOff"></div>
+
+    <ng-template #listOff>
+        <h1>Items list down</h1>
+    </ng-template>
+
+    <ng-template #listOn>
+        <h1>Items list up</h1>
+    </ng-template>
+
+    <!-- <app-items ></app-items>
+<button [innerText]="onOffBtnText" >Show/Hide</button> -->
+
+<!-- <button (click)="copyText()" >Copy</button> -->
+<br>
+<!-- <input
+#a
+type="text"
+placeholder="Pizza" 
+value="Pizza"
+[(ngModel)]="first"
+
+/>
+<br>
+
+<input
+#b
+type="text"
+placeholder="Sushi" 
+value="Sushi"
+[(ngModel)]="first"
+
+/> -->
+
+<!-- <input
+#a
+type="text"
+placeholder="Pizza" 
+value="Pizza"
+[(ngModel)]="first"
+(change) = "copyText()"
+/>
+<br>
+
+<input
+#b
+type="text"
+placeholder="Sushi" 
+value="Sushi"
+[(ngModel)]="second"
+(change) = "copyText2()"
+/> -->
+
+
+<!-- <input
+type="checkbox"
+(click)="showHideList()"
+[checked]="isListPresented"
+/>test
+<br>
+
+<input
+[(ngModel)]="isListPresented"
+/>test2 -->
+
+
+
